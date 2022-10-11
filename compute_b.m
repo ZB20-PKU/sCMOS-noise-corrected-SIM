@@ -1,0 +1,6 @@
+function b = compute_b(rawDataFFT, ...
+                       illuminationPatternConj, ...
+                       otfConjStack)
+	b = imgShiftIFFT(otfConjStack .* rawDataFFT);
+    b = sum(illuminationPatternConj .* b, 3);
+end

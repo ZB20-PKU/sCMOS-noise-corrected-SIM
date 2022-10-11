@@ -1,0 +1,1 @@
+run('C:\Program Files\DIPlib 3\dipstart.m')
